@@ -4,11 +4,322 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana de Tecnologia e Cultura</title>
+
     <style>
-        
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333333;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        #cabecalho {
+            background-color: #163a5f;
+            color: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #cabecalho h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        #cabecalho p {
+            font-size: 16px;
+            line-height: 1.6;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: #2874a6;
+            padding: 15px;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #cccccc;
+        }
+
+        section h2 {
+            color: #163a5f;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        #sobre p {
+            text-align: justify;
+        }
+
+        #sobre div img {
+            width: 1000px;
+            height: 250px;
+            border: 3px solid #163a5f;
+            object-fit: cover;
+            max-width: 100%;
+            align-items: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #333333;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2874a6;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        .atividade {
+            box-sizing: border-box;
+            width: 300px;
+            min-height: 180px;
+            padding: 20px;
+            margin: 15px;
+            border: 3px solid;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .atividade h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .caixa-azul {
+            background-color: lightblue;
+            border-color: #00008b;
+            border-radius: 0;
+        }
+
+        .caixa-verde {
+            background-color: #c8f7c5;
+            border-color: green;
+            border-radius: 15px;
+        }
+
+        .caixa-vermelha {
+            background-color: #f5b7b1;
+            border: 5px solid purple;
+            border-radius: 30px;
+            border-top-left-radius: 0;
+        }
+
+        .atividade a {
+            color: #163a5f;
+            font-weight: bold;
+        }
+
+        .atividade a:hover {
+            color: rgb(220, 20, 60);
+        }
+
+        footer {
+            background-color: #163a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            line-height: 1.2;
+        }
     </style>
 </head>
+
 <body>
-    
+    <header id="cabecalho">
+        <h1>Semana de Tecnologia e Cultura</h1>
+        <p>
+            O IFCE Campus Maranguape realizará uma Semana de Tecnologia
+            e Cultura, com diversas atividades voltadas aos estudantes.
+        </p>
+    </header>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#inscricoes">Inscrições</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+
+        <p>
+            A Semana de Tecnologia e Cultura do IFCE Campus Maranguape
+            é um evento voltado à aprendizagem, à inovação e à troca
+            de conhecimentos. A programação reúne atividades que
+            incentivam a criatividade, a cultura e o desenvolvimento
+            de habilidades tecnológicas dos estudantes.
+        </p>
+
+        <div style="text-align: center;">
+            <img
+            src="https://github.com/wndelix/semana-de-tecnologia/blob/main/ifce.png?raw=true"
+            alt="Imagem ilustrativa da Semana de Tecnologia e Cultura">
+        </div>
+        
+    </section>
+
+    <section id="programacao">
+        <h2>Programação</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Nome da atividade</th>
+                    <th>Local</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>08:00</td>
+                    <td>Abertura do evento</td>
+                    <td>Auditório principal</td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td>Palestra de tecnologia</td>
+                    <td>Sala 1</td>
+                </tr>
+                <tr>
+                    <td>10:30</td>
+                    <td>Oficina de programação</td>
+                    <td>Laboratório de informática</td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td>Apresentação de projetos</td>
+                    <td>Sala 2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="atividades">
+        <h2>Atividades</h2>
+
+        <div class="atividade caixa-azul">
+            <h3>Palestra de tecnologia</h3>
+            <p>
+                Conheça novas tecnologias, tendências digitais e
+                possibilidades de inovação no mercado de trabalho.
+            </p>
+            <p>
+                Saiba mais
+                <a href="https://ifce.edu.br/"
+                   target="_blank"
+                   rel="noopener noreferrer">aqui</a>.
+            </p>
+        </div>
+
+        <div class="atividade caixa-verde">
+            <h3>Oficina de programação</h3>
+            <p>
+                Aprenda conceitos de programação e desenvolva
+                habilidades para criar soluções digitais.
+            </p>
+            <p>
+                Saiba mais
+                <a href="https://ifce.edu.br/"
+                   target="_blank"
+                   rel="noopener noreferrer">aqui</a>.
+            </p>
+        </div>
+
+        <div class="atividade caixa-vermelha">
+            <h3>Apresentação de projetos</h3>
+            <p>
+                Explore projetos desenvolvidos pelos estudantes,
+                compartilhando ideias, experiências e criatividade.
+            </p>
+            <p>
+                Saiba mais
+                <a href="https://ifce.edu.br/"
+                   target="_blank"
+                   rel="noopener noreferrer">aqui</a>.
+            </p>
+        </div>
+    </section>
+
+    <section id="inscricoes">
+        <h2>Inscrições</h2>
+
+        <p>
+            Participe da Semana de Tecnologia e Cultura do IFCE
+            Campus Maranguape e aproveite as atividades oferecidas.
+            Consulte os canais oficiais da instituição para obter
+            informações sobre inscrições, datas e requisitos.
+        </p>
+
+        <p>
+            Saiba mais
+            <a href="https://ifce.edu.br/"
+               target="_blank"
+               rel="noopener noreferrer">no site oficial do IFCE</a>.
+        </p>
+    </section>
+
+    <footer>
+        <h3>Sobre a Instituição</h3>
+        <p>IFCE - Campus Maranguape</p>
+        <p>Curso: Informática</p>
+
+        <p>
+            &copy; 2026 - Desenvolvido por
+            <strong>Francisco Adriel</strong> e
+            <strong>Wendel Peterson</strong>
+        </p>
+    </footer>
+
 </body>
 </html>
